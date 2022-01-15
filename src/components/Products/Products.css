@@ -1,0 +1,57 @@
+
+.common-container{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin:1rem auto; 
+  }
+  
+  .common-title{
+    display: flex;
+    justify-content: space-between;
+    
+  }
+  .view-more{
+    color:#aaa;
+    text-decoration: none;
+    cursor:pointer;
+  
+  }
+  
+  @media screen and (max-width:768px){
+    .common-container{
+     justify-content: center;
+     gap:1.5rem;
+    }
+    .common-title{
+      display:block;
+      text-align: center;
+    }
+
+    .title{
+      justify-content: center;
+      align-items: center;
+    }
+
+    .view-more{
+      display: inline-block;
+      margin:1rem;
+      padding:5px;
+      background-color: red;
+      color:#fff;
+    }
+  }
+
+.title-logo img{
+    width:50px;
+    height: 50px;   
+}
+
+.title{
+    display: flex;
+}
+
+.title h1{
+    padding:0;
+    margin:0;
+}

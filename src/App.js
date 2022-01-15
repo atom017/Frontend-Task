@@ -1,23 +1,35 @@
-import logo from './logo.svg';
-import './App.css';
+
+import Categories from "./components/Category/Categories";
+import Hero from "./components/Hero";
+import Products from "./components/Products/Products";
+import NewArrivals from './components/NewArrivals/NewArrivals'
+import Bar from './components/Bar'
+import PhoneIcon from './assets/Category icons/Asset 42.png'
+import LaptopIcon from './assets/Category icons/Asset 43.png'
+import TabletIcon from './assets/Category icons/Asset 45.png'
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Hero/>
+      <Categories/>
+      <div className="buy1get1">
+      <Products title='Buy1 Get1'/>
+      </div>
+      
+      <Products title='Promotions' promotion='00%'>
+        <p className="no-margin small-text" style={{textDecoration:'line-through'}}>$58,000</p>
+      </Products>
+      <Bar/>
+      <NewArrivals/>
+      <Bar/>
+      <Products title="Phone" img={PhoneIcon}/>
+      <Bar/>
+      <Products title="Laptop" img={LaptopIcon}/>
+      <Bar/>
+      <Products title="Tablet" img={TabletIcon}/>
+      <Footer/>
     </div>
   );
 }

@@ -1,0 +1,16 @@
+.category-title{
+    text-align: center;
+}
+.categories{
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap:10px;
+  
+}
+
+@media screen and (max-width:768px){
+    .categories{
+        justify-content: center;
+    }
+}

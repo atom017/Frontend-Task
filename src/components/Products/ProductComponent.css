@@ -1,0 +1,38 @@
+.bagcontainer{
+    width:120px;
+    height:120px;
+    background-color: #ccc;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.heart{
+    position:absolute;
+    right:5px;
+    top:5px;
+    color:#fff;
+}
+
+.bag{
+    font-size: 2rem;
+}
+
+p{
+    
+    width:120px;
+}
+.price{
+    color:red;
+}
+
+.promotion{
+    position:absolute;
+    background-color: red;
+    top:0;
+    left:0;
+    padding:3px;
+
+}
