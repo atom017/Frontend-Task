@@ -3,7 +3,7 @@ import ProductComponent from './ProductComponent'
 import './Products.css';
 
 const Products = (props) => {
-    console.log(props);
+    
     return (
         <section className='wrapper'>
             <div className="common-title">
