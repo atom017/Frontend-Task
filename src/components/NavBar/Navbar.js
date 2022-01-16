@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState,useEffect } from 'react';
 import {FaBars, FaSearch,FaTimes} from 'react-icons/fa';
 
 import './navbar.css';
@@ -9,6 +9,7 @@ import asset36 from '../../assets/WebBanner/NavBarIcons/Asset 36.svg';
 
 const Navbar = () => {
     const [isOpen,setIsOpen] = useState(false);
+    
     return (
         <div className='wrapper'>
             <nav className="nav-bar">
@@ -19,9 +20,9 @@ const Navbar = () => {
                 
                 <button className="nav-toggle" 
                         onClick={() => setIsOpen(!isOpen)}>
-                            {isOpen?<FaBars/>:<FaTimes/>}
+                            {isOpen?<FaTimes/>:<FaBars/>}
                 </button>
-                <div className={isOpen?'nav-items':'nav-items responsive'}>
+                <div className={isOpen?'nav-items responsive':'nav-items'}>
                     <div className="currency-container">
                         <select name="currency" id="currency">
                             <option value="kyat">ks</option>
