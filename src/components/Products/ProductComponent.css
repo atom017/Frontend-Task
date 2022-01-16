@@ -7,6 +7,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
+   
+    margin-right:1rem;
 }
 
 .heart{
@@ -37,8 +39,3 @@ p{
 
 }
 
-@media screen and(max-width){
-    .bagcontainer{
-        margin-right:1rem;
-    }
-}
