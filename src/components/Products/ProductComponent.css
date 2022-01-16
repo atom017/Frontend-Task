@@ -36,3 +36,9 @@ p{
     padding:3px;
 
 }
+
+@media screen and(max-width){
+    .bagcontainer{
+        margin-left:1rem;
+    }
+}
